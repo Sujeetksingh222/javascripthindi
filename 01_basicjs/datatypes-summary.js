@@ -63,4 +63,23 @@ Return type of variables in JavaScript
        Object  =>  object 
 */
 
+// --- Memory in javascript
+// stack  memory is used in primitive type of data types.
 
+// heap  memory is used for non-primitive data types
+
+let myyoutubename = "sujeetkumarsingh"
+let anothername = myyoutubename;
+anothername = "chaiaurcode"
+console.log(myyoutubename);
+console.log(anothername);
+let user1 ={
+    email:"user@google.com",
+   upi:"user@ybl"
+}
+let user2=user1;// both user1 and user2 points same memory location in heap.
+user2.email =" sujeetksingh222@gmail.com";
+console.log(user1.email);
+console.log(user2.email);
+// in stack, we only can get copy 
+// but in heap ,we get reference
